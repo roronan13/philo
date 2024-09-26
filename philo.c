@@ -6,7 +6,7 @@
 /*   By: rpothier <rpothier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 19:46:57 by rpothier          #+#    #+#             */
-/*   Updated: 2024/09/26 13:23:40 by rpothier         ###   ########.fr       */
+/*   Updated: 2024/09/26 15:34:34 by rpothier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ void	*hello(void *arg)
 
 int	main(int argc, char **argv)
 {
-	pthread_t id1;
+	printf("%d\n", argc);
+		pthread_t id1;
 	int		a;
 	a = 4;
 	
