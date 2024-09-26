@@ -6,7 +6,7 @@
 /*   By: rpothier <rpothier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 19:46:57 by rpothier          #+#    #+#             */
-/*   Updated: 2024/09/26 16:26:21 by rpothier         ###   ########.fr       */
+/*   Updated: 2024/09/26 18:17:55 by rpothier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,15 @@ void	*hello(void *arg)
 int	main(int argc, char **argv)
 {
 	(void)argv;
+
+	int	*tab_args;
 	
-	if (argc != 5 && argc != 6)
-	{
-		printf("Error\nWrong number of arguments !\n");
+	if (check_errors_args(argc, argv))
 		return (0);
-	}
+		
+	tab_args = malloc(sizeof(int) * (argc - 1));
 	
+	set_args(argc, argv, tab_args);
 
 	
 	pthread_t id1;
