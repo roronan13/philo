@@ -6,7 +6,7 @@
 /*   By: rpothier <rpothier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 19:46:57 by rpothier          #+#    #+#             */
-/*   Updated: 2024/09/26 18:17:55 by rpothier         ###   ########.fr       */
+/*   Updated: 2024/09/26 19:11:03 by rpothier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ int	main(int argc, char **argv)
 	if (check_errors_args(argc, argv))
 		return (0);
 		
-	tab_args = malloc(sizeof(int) * (argc - 1));
+	// tab_args = malloc(sizeof(int) * (argc - 1));
 	
-	set_args(argc, argv, tab_args);
-
+	if (set_args(argc, argv, tab_args)) // set avec atoi et pas trop grand et pas 0
+		return (0);
 	
 	pthread_t id1;
 	int		a;

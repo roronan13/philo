@@ -6,7 +6,7 @@
 /*   By: rpothier <rpothier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 18:03:37 by rpothier          #+#    #+#             */
-/*   Updated: 2024/09/26 18:52:21 by rpothier         ###   ########.fr       */
+/*   Updated: 2024/09/26 19:03:18 by rpothier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ int	check_args(int argc, char **argv)
 {
 	if (check_positive_nbr(argc, argv))
 		return (1);
-	if (check_long_nbr(argc, argv))
-		return (1);
+	/* if (check_long_nbr(argc, argv))
+		return (1); */
 	return (0);
 }
 
@@ -64,7 +64,7 @@ int	check_positive_nbr(int argc, char **argv)
 	return (0);
 }
 
-int	check_long_nbr(int argc, char **argv)
+/* int	check_long_nbr(int argc, char **argv)
 {
 	int	i;
 
@@ -77,3 +77,4 @@ int	check_long_nbr(int argc, char **argv)
 	}
 	return (0);
 }
+ */
